@@ -59,12 +59,24 @@ Windows, 64bit, Mathematica 10.4+
 
 Building
 ========
-To compile KeYmaera X from source code and learn about faster incremental compilation in IDEs, see [Building Instructions](https://github.com/LS-Lab/KeYmaeraX-release/wiki/Building-Instructions).
-In a nutshell, install
-
-* [Java Development Kit JDK](https://www.oracle.com/java/technologies/javase-downloads.html) or [OpenJDK](https://openjdk.java.net/) (be sure to use version 1.8-12, Java 13 onwards does not work)
+To compile KeYmaera X from source code and learn about faster incremental compilation in IDEs, see [Building Instructions](https://github.com/LS-Lab/KeYmaeraX-release/wiki/Building-Instructions). In a nutshell, 
+* [Java Development Kit JDK version 1.8-12 ONLY](https://www.oracle.com/java/technologies/javase-downloads.html) or [OpenJDK](https://openjdk.java.net/) (be sure to use version 1.8-12, Java 13 onwards does not work). See note below for further instructions on getting the right JDK.
+* Ensure you have the correct JDK (see below).
 * SBT 1.3.7
-* Scala 2.12.8 
+* Scala 2.12.8
+
+## JDK
+
+On mac:
+
+```bash
+brew install openjdk@11
+```
+
+Read the output of brew; it may suggest changes to your `zsh` or `bash` profile. Be sure to follow these recommendations.
+
+## Installing the Rest
+
 
 and run the following to build `keymaerax.jar`:
 
